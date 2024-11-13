@@ -1,5 +1,6 @@
 package fr.univtours.ploytech.tp_note.business;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.univtours.ploytech.tp_note.dao.BookDao;
@@ -14,12 +15,6 @@ public class BookBusinessImpl implements BookBusiness {
     private BookDao bookDao;
 
     @Override
-    public List<BookBean> getBookList() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getBookList'");
-    }
-
-    @Override
     public void insertBook(BookBean note) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertBook'");
@@ -31,10 +26,18 @@ public class BookBusinessImpl implements BookBusiness {
         throw new UnsupportedOperationException("Unimplemented method 'updateBook'");
     }
 
+    /*
     @Override
     public void deleteBook(BookBean note) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'deleteBook'");
+    }
+    */
+
+    @Override
+    public int nbBookEmpruntes() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'nbBookEmpruntes'");
     }
 
     // AJOUTER LES REGLES DE GESTION

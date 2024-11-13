@@ -6,13 +6,12 @@ import fr.univtours.ploytech.tp_note.model.BookBean;
 
 public interface BookBusiness {
 
-    public List<BookBean> getBookList();
+    public void insertBook(BookBean book);
 
-    public void insertBook(BookBean note);
+    public void updateBook(BookBean book);
 
-    public void updateBook(BookBean result);
-
-    public void deleteBook(BookBean note);
+    //public void deleteBook(BookBean note);
 
     // AJOUTER LES REGLES DE GESTION
+    public int nbBookEmpruntes();
 }
