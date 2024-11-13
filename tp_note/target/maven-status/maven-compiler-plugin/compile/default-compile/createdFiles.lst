@@ -1,0 +1,9 @@
+fr\univtours\ploytech\tp_note\dao\BookDaoImpl.class
+fr\univtours\ploytech\tp_note\servlet\HomeServlet.class
+fr\univtours\ploytech\tp_note\servlet\FillDBServlet.class
+fr\univtours\ploytech\tp_note\model\BookBean.class
+fr\univtours\ploytech\tp_note\business\BookBusinessImpl.class
+fr\univtours\ploytech\tp_note\business\BookBusiness.class
+fr\univtours\ploytech\tp_note\JakartaRestConfiguration.class
+fr\univtours\ploytech\tp_note\dao\BookDao.class
+fr\univtours\ploytech\tp_note\resources\JakartaEE10Resource.class
