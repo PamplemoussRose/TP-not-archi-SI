@@ -15,15 +15,19 @@ public class BookBusinessImpl implements BookBusiness {
     private BookDao bookDao;
 
     @Override
-    public void insertBook(BookBean note) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertBook'");
+    public List<BookBean> getBookList() {
+        return this.bookDao.getBookList();
     }
 
+    
     @Override
-    public void updateBook(BookBean result) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateBook'");
+    public void insertBook(BookBean book) {
+        //this.bookDao.insert(book);
+    } 
+
+    @Override
+    public void updateBook(BookBean book) {
+        this.bookDao.updateBook(book);
     }
 
     /*
@@ -36,9 +40,11 @@ public class BookBusinessImpl implements BookBusiness {
 
     @Override
     public int nbBookEmpruntes() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'nbBookEmpruntes'");
+        List<BookBean> liste = this.bookDao.getBookRes();
+        return liste.size();
     }
+
+    
 
     // AJOUTER LES REGLES DE GESTION
 }

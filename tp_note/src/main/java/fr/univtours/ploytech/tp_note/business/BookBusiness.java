@@ -6,6 +6,8 @@ import fr.univtours.ploytech.tp_note.model.BookBean;
 
 public interface BookBusiness {
 
+    public List<BookBean> getBookList();
+
     public void insertBook(BookBean book);
 
     public void updateBook(BookBean book);
