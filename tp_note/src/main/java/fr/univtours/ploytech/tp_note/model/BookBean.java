@@ -10,41 +10,52 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "NOTE_JPA")
+@Table(name = "book")
 public class BookBean implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID_NOTE")
-    private Integer idNote;
+    @Column(name = "ID")
+    private int id;
 
-    @Column(name = "ID_STUDENT")
-    private Integer idStudent;
+    @Column(name = "TITLE")
+    private String title;
 
     @Column(name = "NOTE")
-    private float note;
+    private String note;
 
-    public Integer getIdNote() {
-        return idNote;
+    @Column(name = "FREE")
+    private boolean free;
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdNote(Integer idNote) {
-        this.idNote = idNote;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public Integer getIdStudent() {
-        return idStudent;
+    public String getTitle() {
+        return title;
     }
 
-    public void setIdStudent(Integer idStudent) {
-        this.idStudent = idStudent;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public float getNote() {
+    public String getNote() {
         return note;
     }
 
-    public void setNote(float note) {
+    public void setNote(String note) {
         this.note = note;
+    }
+
+    public boolean isFree() {
+        return free;
+    }
+
+    public void setFree(boolean free) {
+        this.free = free;
     }
 
 }
