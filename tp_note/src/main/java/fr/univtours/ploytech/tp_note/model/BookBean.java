@@ -20,8 +20,8 @@ public class BookBean implements Serializable {
     @Column(name = "TITLE")
     private String title;
 
-    @Column(name = "NOTE")
-    private String note;
+    @Column(name = "AUTHOR")
+    private String author;
 
     @Column(name = "FREE")
     private boolean free;
@@ -42,12 +42,12 @@ public class BookBean implements Serializable {
         this.title = title;
     }
 
-    public String getNote() {
-        return note;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setNote(String note) {
-        this.note = note;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public boolean isFree() {
@@ -57,5 +57,6 @@ public class BookBean implements Serializable {
     public void setFree(boolean free) {
         this.free = free;
     }
+
 
 }

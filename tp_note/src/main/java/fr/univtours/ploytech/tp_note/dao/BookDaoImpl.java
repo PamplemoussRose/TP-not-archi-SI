@@ -16,13 +16,13 @@ public class BookDaoImpl implements BookDao {
         return em.find(BookBean.class, id);
     }
 
-    @Override
+    /*@Override
     public void insertBook(BookBean student) {
         em.persist(student);
     }
 
     @Override
-    public void updateBook(BookBean student) {
+    public void updateBook(BookBean book) {
         // String sql = "update STUDENT_JPA set NAME = "+student.getName()+", FIRST_NAME
         // = "+student.getFirstName()+" where STUDENT_JPA.ID_STUDENT =
         // "+student.getIdStudent()+";";
