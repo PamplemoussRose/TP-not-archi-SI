@@ -30,7 +30,7 @@ public class FillDBServlet extends HttpServlet {
         BookBean livre2 = new BookBean();
         livre1.setTitle("Le temps des");
         livre1.setAuthor("N. Sarco");
-        livre1.setFree(true);
+        livre1.setFree(false);
         bookBusiness.insertBook(livre2);
 
         BookBean livre3 = new BookBean();

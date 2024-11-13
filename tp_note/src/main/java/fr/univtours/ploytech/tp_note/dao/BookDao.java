@@ -10,7 +10,9 @@ public interface BookDao {
     
     public BookBean getBook(Integer id);
 
-    //public void insertBook(BookBean book);
+    public void insertBook(BookBean bookB);
 
-    public void updateBook(BookBean book);
+    public void updateBook(BookBean bookB);
+
+    public List<BookBean> getBookRes();
 }
