@@ -1,6 +1,5 @@
 package fr.univtours.ploytech.tp_note.business;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import fr.univtours.ploytech.tp_note.dao.BookDao;
@@ -16,13 +15,14 @@ public class BookBusinessImpl implements BookBusiness {
 
     @Override
     public List<BookBean> getBookList() {
+        System.out.println("Book business");
         return this.bookDao.getBookList();
     }
 
     
     @Override
     public void insertBook(BookBean book) {
-        //this.bookDao.insert(book);
+        this.bookDao.insertBook(book);
     } 
 
     @Override

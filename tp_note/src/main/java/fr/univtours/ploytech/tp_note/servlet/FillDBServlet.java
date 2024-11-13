@@ -28,21 +28,21 @@ public class FillDBServlet extends HttpServlet {
         bookBusiness.insertBook(livre1);
 
         BookBean livre2 = new BookBean();
-        livre1.setTitle("Le temps des");
-        livre1.setAuthor("N. Sarco");
-        livre1.setFree(false);
+        livre2.setTitle("Le temps des");
+        livre2.setAuthor("N. Sarco");
+        livre2.setFree(false);
         bookBusiness.insertBook(livre2);
 
         BookBean livre3 = new BookBean();
-        livre1.setTitle("Le temps");
-        livre1.setAuthor("N. Sarco");
-        livre1.setFree(true);
+        livre3.setTitle("Le temps");
+        livre3.setAuthor("N. Sarco");
+        livre3.setFree(true);
         bookBusiness.insertBook(livre3);
 
         BookBean livre4 = new BookBean();
-        livre1.setTitle("Le");
-        livre1.setAuthor("N. Sarco");
-        livre1.setFree(false);
+        livre4.setTitle("Le");
+        livre4.setAuthor("N. Sarco");
+        livre4.setFree(false);
         bookBusiness.insertBook(livre4);
     }
 }

@@ -17,7 +17,8 @@ public class BookDaoImpl implements BookDao {
     @SuppressWarnings("unchecked")
     @Override
     public List<BookBean> getBookList() {
-        Query requete = em.createNativeQuery("select * from book", BookBean.class);
+        System.out.println("book DAO");
+        Query requete = em.createNativeQuery("select * from BOOK", BookBean.class);
         return requete.getResultList();
     }
 
@@ -34,15 +35,15 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public void updateBook(BookBean bookB) {
-        String sql = "update book set TITLE = " + bookB.getTitle() + ", AUTHOR= " + bookB.getAuthor() + ",FREE= "
-                + bookB.isFree() + " where book.ID = " + bookB.getId() + ";";
+        String sql = "update BOOK set TITLE = " + bookB.getTitle() + ", AUTHOR= " + bookB.getAuthor() + ",FREE= "
+                + bookB.isFree() + " where BOOK.ID = " + bookB.getId() + ";";
         em.createNativeQuery(sql);
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public List<BookBean> getBookRes(){
-        Query requete = em.createNativeQuery("select * from book where FREE=1", BookBean.class);
+        Query requete = em.createNativeQuery("select * from BOOK where FREE=1", BookBean.class);
         return requete.getResultList();
     }
     
