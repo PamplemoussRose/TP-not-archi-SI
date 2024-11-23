@@ -58,5 +58,7 @@ public class BookBean implements Serializable {
         this.free = free;
     }
 
-
+    public String toString(){
+        return id + " - " + title + " - " + author + " - " + free;
+    }
 }

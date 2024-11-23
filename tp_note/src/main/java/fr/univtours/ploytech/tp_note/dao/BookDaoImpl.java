@@ -17,7 +17,6 @@ public class BookDaoImpl implements BookDao {
     @SuppressWarnings("unchecked")
     @Override
     public List<BookBean> getBookList() {
-        System.out.println("book DAO");
         Query requete = em.createNativeQuery("select * from BOOK", BookBean.class);
         return requete.getResultList();
     }

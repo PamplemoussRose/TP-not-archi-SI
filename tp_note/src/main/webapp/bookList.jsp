@@ -18,11 +18,11 @@
                         <th>Auteur</th>
                         <th>Emprunter/Rendre</th>
                     </tr>
-                    <c:forEach items="${requestScope.BOOK_LISTE}" var="book">
+                    <c:forEach items="${requestScope.BOOK_LIST}" var="book">
                         <tr>
-                            <td>${book.getBookBean().title}</td>
-                            <td>${{book.getBookBean().auteur}</td>
-                            <td>${{book.getBookBean().free}</td>
+                            <td>${book.title}</td>
+                            <td>${book.author}</td>
+                            <td>${book.free}</td>
                         </tr>
                     </c:forEach>
                 </table>

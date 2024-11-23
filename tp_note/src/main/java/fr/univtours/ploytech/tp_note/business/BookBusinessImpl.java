@@ -15,7 +15,6 @@ public class BookBusinessImpl implements BookBusiness {
 
     @Override
     public List<BookBean> getBookList() {
-        System.out.println("Book business");
         return this.bookDao.getBookList();
     }
 
